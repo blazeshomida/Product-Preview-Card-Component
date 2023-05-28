@@ -1,92 +1,100 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Product preview card component solution <!-- omit from toc -->
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+Throughout this project, I encountered and overcame a number of challenges that tested my problem-solving skills and deepened my understanding of CSS. One particular hurdle, which I discuss in detail in the [What I Learned](#what-i-learned) section, involved the use of pseudo-elements.
 
-Thanks for checking out this front-end coding challenge.
+Overall, this project was both challenging and enjoyable. It provided an excellent platform to experiment with new concepts like working with pseudo-elements and understanding the finer points of CSS hover effects and cursor styles. I look forward to carrying the lessons learned into future web development challenges.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Table of contents <!-- omit from toc -->
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [My Solution](#my-solution)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [My Approach](#my-approach)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## The challenge
+## Overview
 
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+This challenge called for the implementation of a responsive design that adapts to varying screen sizes and provides appropriate interactive states for user interface elements. The project was an opportunity to apply and reinforce my understanding of essential web design principles, including media queries and CSS layout techniques such as Flexbox and Grid.
 
-## Where to find everything
+![](./design/desktop-design.jpg)
+![](./design/active-states.jpg)
+![](./design/mobile-design.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### My Solution
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+![](./screenshots/final-desktop.jpeg)
+![](./screenshots/final-mobile.jpeg)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## My process
 
-## Building your project
+### Built with
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### My Approach
 
-## Deploying your project
+In tackling this project, I opted to base my work on the provided style guide instead of relying on the design files. This decision was made to challenge myself and broaden my design interpretation skills.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+I initiated the process by examining the desktop design, recognizing that it generally possesses a more complex layout. My aim was to gain a clear understanding of the project's structure and content placement, which would aid in crafting the HTML.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Once the HTML content was in place, I shifted my focus to CSS for styling. I adopted a mobile-first strategy in my approach to CSS, which is often simpler to implement initially. I prioritized the development of a functional and aesthetic mobile layout, before progressively enhancing the design for larger screens using media queries.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+This strategy ensures that my projects are accessible on a wide range of devices, taking into account the growing number of mobile users and the varying screen sizes that come with the multitude of devices available in today's market.
 
-## Create a custom `README.md`
+### What I learned
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Through this project, I gained a deeper understanding of the `<source>` HTML tag and the `::before` and `::after` pseudo-elements in CSS.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+I discovered that the `<source>` tag provides a way to alter images without the need for JavaScript. It allows the browser to choose the best-suited image based on the current viewing context, enhancing the responsiveness of the website.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+In terms of CSS, I got to explore the use of `::before` pseudo-element to incorporate a cart icon into the "Add to Cart" button. While I could have used an `<img>` tag, I decided to experiment with this approach after seeing someone else employ it. I found it particularly useful as it offers the flexibility to add the cart icon to any element by merely assigning the `.add-cart` class, thereby eliminating the need to manually insert the icon each time.
 
-## Submitting your solution
+However, I did encounter a layout issue with the `.card` and `.card__content` elements. The problem arose when testing the desktop layout: the card image would take up most of the space, leaving the card content cramped. I traced this problem to the `grid-template-columns: auto 1fr;` property in the media query. I adjusted it to `grid-template-columns: 1fr 1fr;` to ensure an equal distribution of width between the image and the content.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+Another issue was with the vertical expansion of the button on the desktop layout. I managed to resolve this by setting `.card__content` to `display: flex;` and modifying the flex direction to align with the design.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Below is a screenshot illustrating the layout issue I faced with the button:
 
-## Sharing your solution
+![](screenshots/button-sizing-layout-issue.jpeg)
 
-There are multiple places you can share your solution:
+### Continued development
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+Going forward, I plan to deepen my understanding and proficiency in a few key areas:
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- **CSS Animations:** While I've been able to create some basic animations, I'm interested in exploring more complex ones, including transitions and keyframe animations. Understanding the nuances of timing, duration, and easing functions will be a critical part of this.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- **JavaScript Interactivity:** This project largely focused on HTML and CSS, but I'm keen on improving my JavaScript skills to add more interactive features to my future projects. In particular, I'd like to delve deeper into event handling, data manipulation, and utilizing APIs.
 
-## Got feedback for us?
+- **Accessibility:** I've used aria-labels in this project to improve screen reader compatibility, but I recognize that there's a lot more to learn about making web pages fully accessible. I aim to delve deeper into ARIA roles and properties, focus management, and more nuanced aspects of accessible design.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- **Performance Optimization:** As web pages become more complex, it's essential that they still load quickly and run smoothly. I want to learn more about techniques for minimizing file sizes, optimizing images, lazy loading, and other practices that can improve a website's performance.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+I believe focusing on these areas will greatly enhance the quality of my future work and help me become a more well-rounded developer.
+### Useful resources
 
-**Have fun building!** 🚀
+- [W3 Schools - HTML `<source>` Tag](https://www.w3schools.com/tags/tag_source.asp) - This resource greatly clarified my understanding of the <source> tag and how to best leverage its attributes. It's a solid reference for anyone seeking to understand the usage and implementation of this tag.  
+- [Before and After pseudo elements explained - part one: how they work](https://youtu.be/zGiirUiWslI) - This informative video was instrumental in helping me grasp the concept of pseudo-elements. It breaks down the topic into easily digestible segments, making it an excellent recommendation for those still coming to grips with this aspect of CSS.
+
+## Author
+
+- Github - [@blazeshomida](https://github.com/blazeshomida)
+- Frontend Mentor - [@shomidamoney](https://www.frontendmentor.io/profile/yourusername)
