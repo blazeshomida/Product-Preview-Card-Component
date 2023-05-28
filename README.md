@@ -11,6 +11,7 @@ Overall, this project was both challenging and enjoyable. It provided an excelle
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [My Solution](#my-solution)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [My Approach](#my-approach)
@@ -40,6 +41,11 @@ This challenge called for the implementation of a responsive design that adapts 
 
 ![](./screenshots/final-desktop.jpeg)
 ![](./screenshots/final-mobile.jpeg)
+
+### Links
+
+- Solution URL: [View Solution HERE](https://github.com/blazeshomida/Product-Preview-Card-Component)
+- Live Site URL: [View Live Site HERE](https://blazeshomida.github.io/Product-Preview-Card-Component/)
 
 ## My process
 
